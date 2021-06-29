@@ -13,6 +13,5 @@ app.get("/repository", async (req, resp) => {
   }
 
 })
-app.listen(10000, () => {
-    console.log('API Gateway running!');
-});
+app.listen(process.env.PORT || 10000, console.log('Server Online'));
+
